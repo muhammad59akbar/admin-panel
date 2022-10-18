@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #7E7E7E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+	scrollbar-width: none;
+}
+
+#sidebar.hide{
+    width: 60px;
+}
+
+#sidebar .logo-side{
+    font-size: 24px;
+    font-weight: 600;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+#sidebar.hide .logo-side{
+    font-size: 0;
+}
+
+#sidebar .sidebar-logo-items{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+#sidebar.hide .side-menu li a {
+	width: calc(48px - (4px * 2));
+	transition: width .3s ease;
+}
+
+.side-menu{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.side-menu li{
+    height: 40px;
+    margin: 25px 10px;
+    border-radius: 5px;
+    background: #CECECE;
+}
+
+.side-menu li a{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin: 10px 0;
+    color: black;
+    white-space: nowrap;
+	overflow-x: hidden;
+}
+
+.side-menu li a .iconku{
+    margin-left: 8px;
+}
+
+.side-menu li a span{
+    margin: 0 20px;
+}
+
+#sidebar.hide ~ #main-content{
+    width: calc(100% - 60px);
+	left: 60px;
+}
+
+#main-content{
+    position: relative;
+    left: 250px;
+   
+    width: calc(100% - 250px);
+    border: 1px solid;
+	transition: .3s ease;
+}
+
+#main-content nav{
+    height: 56px;
+    padding: 0 24px;
+	display: flex;
+	align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.frame-box-menu{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.navbar-account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.account-dropdown{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+
+.bell-dropdown{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 35px;
+}
+
+.dropdown-notification{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 90px;
+    top: 60px;
+    border: 1px solid;
+    box-sizing: border-box;
+    transition: .3s all ease-in-out;
+}
+.dropdown-notification li{
+    width: 300px;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid;
+    margin-top: 5px;
+}
+
+.dropdown-notification li span{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.visible-notification{
+    display: none;
+}
+
+
+
