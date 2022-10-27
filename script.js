@@ -18,6 +18,14 @@ notification.addEventListener("click", function () {
   activenav.classList.toggle("visible-notification");
 });
 
+// profile account
+const dropdownaccount = document.querySelector(".account-dropdown");
+const activedropdown = document.querySelector(".dropdown-account");
+
+dropdownaccount.addEventListener("click", function () {
+  activedropdown.classList.toggle("visible-account");
+});
+
 // sidebar
 const menuBar = document.querySelector("#main-content nav .bx.bx-menu");
 const sidebar = document.getElementById("sidebar");
