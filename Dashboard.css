@@ -157,6 +157,7 @@ img{
     box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
     border-radius: 10px;
     transition: .3s all ease-in-out;
+    z-index: 1;
 }
 .dropdown-notification li{
     width: 300px;
